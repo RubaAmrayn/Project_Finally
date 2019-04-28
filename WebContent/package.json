@@ -1,0 +1,25 @@
+{
+  "name": "mycode",
+  "version": "1.0.0",
+  "description": "web app that helping developers to manageing ther codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Code_Project"
+  },
+  "keywords": [
+    "code",
+    "managment"
+  ],
+  "author": "Ruba",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }    
+}

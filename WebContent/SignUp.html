@@ -1,0 +1,69 @@
+   <div class="card" style="max-width:600px; margin: 200px auto !important;margin:0; padding:0;">
+        <div class="card-header text-center" >
+         <h5>Signup</h5>
+        </div>
+        <div class="card-body">
+            <div class="container">
+            <form class="form-group" style="margin-top: 15px;" method="post">
+              <div class="form-group row">
+                  <div class="col-4">
+                      <label for="uname"><b>First Name</b></label>
+                  </div>
+                 <div class="col-8">
+                    <input type="text" placeholder="Enter First Name" id="firstName" name="firstName" class="form-control" required>
+                 </div>
+              </div>
+              <div class="form-group row">
+                        <div class="col-4">
+                            <label for="uname"><b>Last Name</b></label>
+                        </div>
+                       <div class="col-8">
+                          <input type="text" placeholder="Enter Last Name" id="lastName" name="lastName" class="form-control" required>
+                       </div>
+                    </div>
+                    <div class="form-group row">
+                                <div class="col-4">
+                                    <label for="uname"><b>Username</b></label>
+                                </div>
+                               <div class="col-8">
+                                  <input type="text" placeholder="Enter Username" id="username" name="uname" class="form-control" required>
+                               </div>
+                            </div>    
+                    <div class="form-group row">
+                          <div class="col-4">
+                              <label for="uname"><b>Email</b></label>
+                          </div>
+                         <div class="col-8">
+                            <input type="email" placeholder="Enter Email" id="email" name="email" class="form-control" required>
+                         </div>
+                      </div>
+               <div class="form-group row">
+                 <div class="col-4">
+                    <label for="psw"><b>Password</b></label>
+                 </div>
+                 <div class="col-8">
+                    <input type="password" placeholder="Enter Password" class="form-control" id="password" name="psw" required>
+                 </div>
+               </div>
+               <div class="form-group row">
+                        <div class="col-4">
+                           <label for="psw"><b>Confirm Password</b></label>
+                        </div>
+                        <div class="col-8">
+                           <input type="password" placeholder="Repeat Password" class="form-control" id="repPass" name="psw" required>
+                        </div>
+                      </div>
+               <div class="form-group row">
+                 <div class="col-12">
+                    <button id="btn-signup" class="btn btn-lg btn-block btn-login">Create</button>
+                 </div>
+               </div>
+               <div class="form-grop row">
+                    <div class="col-12">
+                    <span class="psw"><a onclick="routers.push('login')" >Do You Have Account? Just Log In.</a></span>
+              </div>
+               </div>
+            </form>
+         </div>
+        </div>
+   </div>

@@ -1,0 +1,80 @@
+        <form >
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <label for="">New Code</label>
+                            </div>
+                            <div class="card-body">
+                                <textarea name="code_area" id="code_area" cols="30" rows="10" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6" id="option_row">
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-sm-5">
+                                <label for="" class="label">Syntax Highlighting:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <select name="syntax_list" id="syntax_list" class="form-control" style="color:#001a33">
+                                    <option value="">Select Language</option>
+                                    <option value="php">PHP</option>
+                                    <option value="html">HTML</option>
+                                    <option value="css">CSS</option>
+                                    <option value="javascript">JAVASCRIPT</option>
+                                    <option value="python">PYTHON</option>
+                                    <option value="java">JAVA</option>
+                                    <option value="c#">C#</option>
+                                    <option value="ruby">RUBY</option>
+                                    <option value="sql">SQL</option>
+                                    <option value="apache">APACHE</option>
+                                    <option value="nginx">NGINX</option>
+                                    <option value="vbnet">VB.NET</option>
+                                    <option value="cpp">C++</option>
+                                    <option value="c">C</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-sm-5">
+                                <label for="" class="label">Code Description:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <textarea name="desc" id="desc" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-sm-5">
+                                <label for="" class="label">Code Name/Title:</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="title" name="title">
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top:10px;">
+                                <div class="col-sm-5">
+                                    <label for="" class="label">Permission:</label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <select name="expired_list" id="permition" class="form-control" style="color:#001a33">
+                                        <option value="">Select Code Permission</option>
+                                       <option value="public">Public</option>
+                                       <option value="private">Private</option>
+                                    </select>
+                                </div>
+                            </div>
+                        <div class="row" style="margin-top:10px;">
+                            <div class="col-sm-5">
+        
+                            </div>
+                            <div class="col-sm-7">
+                               <button type="button" send-code="true" class="btn btn-lg btn-block" id="btn_send">Create New Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+            </form>

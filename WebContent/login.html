@@ -1,0 +1,45 @@
+   <div class="card" style="max-width:600px; margin: 200px auto !important; margin:0; padding:0;">
+        <div class="card-header text-center" >
+         <h5>Login</h5>
+        </div>
+        <div class="card-body">
+           <div class="container">
+               <form class="form-group" method="POST" style="margin-top: 15px;">
+               
+                     <div class="form-group row">
+                         <div class="col-4">
+                             <label for="uname" ><b>Username</b></label>
+                         </div>
+                        <div class="col-8">
+                           <input type="text" placeholder="Enter Username" id="username" name="uname" class="form-control">
+                        </div>
+                     </div>
+                      <div class="form-group row">
+                        <div class="col-4">
+                           <label for="psw"><b>Password</b></label>
+                        </div>
+                        <div class="col-8">
+                           <input type="password" id="password" placeholder="Enter Password" class="form-control" name="psw">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                       <div class="col-12">
+                          <a onclick="routers.push('rest')" > <span class="psw">Forget password?</span></a>
+                       </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-12">
+                           <button type="button" id="btn-login" class="btn btn-lg btn-block btn-login">Login</button>
+                        </div>
+                      </div>
+                     <div class="form-group row">
+                       <div class="col-12">  
+                           
+                       <span class="psw"><a onclick="routers.push('SignUp')">Create an account?</a></span>
+                       </div>
+                     </div>
+                   </form>
+           </div>
+        </div>
+   </div>
+  

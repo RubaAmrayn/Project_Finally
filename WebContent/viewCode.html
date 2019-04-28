@@ -1,0 +1,68 @@
+
+<div class="code-info">
+    <div class="code-title">
+        <h1></h1>
+    </div>
+    <div class="code-desc">
+        <h3></h3>
+    </div>
+    <div class="code-created">
+        <span class="created-date code-icons">
+            <i class="fas fa fa-calendar-week"></i>
+            <span></span> 
+        </span>
+        <span class="permition code-icons">
+            <i class="fas fa fa-user-lock"></i>
+             <span></span>
+        </span>
+    </div>
+    <div class="code-content">
+
+        <div class="card border-light mb-3">
+            <div class="card-header">
+                <div class="left">
+                    <h4></h4>
+                </div>
+                <div class="right">
+                    <button class="share button-icons"><i class="fas fa fa-share-alt"></i></button>
+                    <button class="edit button-icons"><i class="fas fa fa-edit"></i></button>
+                    <button class="delete button-icons"><i class="fas fa fa-trash-alt"></i></button>
+                </div>
+            </div>
+            <div class="card-body">
+                <!-- <h4 class="card-title">Secondary card title</h4> -->
+                <div class="card-text">
+
+                    <pre>
+ <code class="javascript">
+   
+</code>
+                                           </pre>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    //حدث DOMContentLoaded 
+    //يعمل عند اكتمال تحميل وتنفيذ ال html 
+    //في الصفحة
+    document.addEventListener('DOMContentLoaded', function (event) {
+        // html code نعرف متغير نسند له عنصر ال    
+        var block = document.querySelector('pre code')
+        //نرسل العنصر ك باراميتر للمكتبة المتخصصه بتنسيق الاكواد
+        hljs.highlightBlock(block);
+        // الخاص بالمكتبة لانه كان يسبب مشاكل في قياسات الشاشةhljs هنا حذفنا كلاس 
+        block.classList.remove('hljs')
+        //هنا قمنا بتغيير لون الخلفية لعنصر الكود
+        block.style.backGroundColor = '#282c34'
+        // وهنا قمنا بتغيير لون الخط لعنصر الكود
+        block.style.color = "#abb2bf"
+        //هنا قمنا بتفعيل الشريط الافقي في حال كان الكود اطول من عرض العنصر
+        block.parentNode.style.overflowX = 'auto'
+
+    });
+</script>

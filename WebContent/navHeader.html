@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" onclick="routers.push('home')">
+        <h3>
+            My
+            <small class="text-muted" style="margin-left: -7px">Code</small>
+        </h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" onclick="routers.push('newcode')" >
+                    <button type="button" class="btn btn-light">+ New Code</button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navlinks" onclick="routers.push('Groups')">
+                    Groups
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navlinks" onclick="routers.push('About')">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">
+                    <form class="form-inline my-2 my-lg-0" action="">
+                        <input class="form-control mr-sm-2" id="search" type="text" placeholder="Search">
+                        <button class="btn btn-light my-2 my-sm-0" id="btn-search">Search</button>
+                    </form>
+                </a>
+            </li>
+        </ul>
+        <div>
+            <span class="nav-icons"><i class="fas fa fa-user"></i>Admin</span>
+            <span class="nav-icons" onclick="routers.push('login')"><i class="fas fa fa-sign-out-alt"></i>Log out</span>
+        </div>
+    </div>
+</nav>
